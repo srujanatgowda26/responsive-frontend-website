@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+     font-family: "Open Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.text-centre{
+    text-align: center;
+}
+.section-title{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-lead{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+}
+.navbar-links{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    align-items: center;
+}
+.hero{
+    height: 450px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/images/hero.png');
+    color: #ffffff;
+    text-align: center;
+    padding: 100px;
+}
+.hero-title{
+    font-size: 55px;
+}
+.hero-lead{
+    font-size: 25px;
+}
+.hero-btn{
+    background-color: #ffffff;
+    color: black;
+    padding: 10px;
+    display: inline-block; /*avoids overlapping*/
+    margin-top: 10px;
+    border-radius: 20px; /*curves*/
+    font-weight: bold;
+}
+.hero-btn:hover{
+    color: #ffffff;
+    background-color: #2a74ff;
+}
+.about{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.about-layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+    /*justify-content: space-between;*/
+}
+.about-text{
+    line-height: 2.2;
+    font-size: 18px;
+}
+.value{
+    background-color: #dcffa0;
+    padding: 25px;
+}
+.value-card{
+    background-color: #dcffa0;
+   
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+.value-flex{
+    display: flex;
+    text-align: center; 
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.destinations{
+    padding: 35px
+}
+.destinations-grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr); 
+    gap: 35px;
+    margin-top: 20px;
+    text-align: center;
+
+} 
+.grid-item img{
+    width: 100%;
+    border: 5px solid #dcffa0;
+    border-radius: 15px;    
+}
+.grid-item{
+    transition: 0.3s ease;
+}
+.grid-item:hover img{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+
+}
+
+.contact{
+    background-color: #c0d6ff;
+    padding: 35px;
+
+}
+.contact-card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+input,
+textarea{
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 18px;
+    font-family: inherit;
+   
+}
+
+.btn-primary{
+    background-color: #2a74ff;
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    display: inline-block;
+}
+.btn-primary:hover{
+    background-color: #01a30a;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+footer{
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (max-width:789px){
+    .about-layout{
+        grid-template-columns: 1fr;
+    }
+    .value-card{
+        flex-direction: column;
+    }
+    .destinations-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:540px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       
+
+    }
+    .navbar img{
+        display: block;
+        
+        margin-bottom: 20px;
+    }
+    .navbar-links{
+        margin: auto;
+    }
+    .hero-title{
+        font-size: 35px;
+    }
+    .hero-lead{
+        font-size: 20px;
+    }
+}
