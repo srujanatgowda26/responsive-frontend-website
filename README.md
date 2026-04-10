@@ -2,7 +2,7 @@
 A modern and responsive website created using HTML &amp; CSS, deployed on Netlify.
 
 ## 🚀 Live Demo
-https://your-netlify-link.netlify.app/
+https://69d8a4e52065d8634dd65911--wonderlustt-kannada.netlify.app/
 
 ## 💻 Technologies Used
 - HTML
